@@ -1,0 +1,24 @@
+Based on the following user preferences, generate travel recommendations:
+
+**Location:** {{location}}
+
+**Interests:** {{#each interests}}{{this}}{{#unless @last}}, {{/unless}}{{/each}}
+
+**Budget:** {{budget}}
+
+Provide detailed recommendations including trip names, descriptions, and location details. The response should include:
+
+1. **Trip Name**
+   - **Description:** Brief description of the trip.
+   - **Locations:** List of locations with details such as:
+     - **Location Name:** Name of the location.
+     - **Description:** Description of the location.
+     - **Rating:** Rating of the location.
+     - **Reviews:** Reviews for the location.
+     - **Price:** Price information for the location.
+     - **Category:** Category of the location (e.g., tourist spot, restaurant).
+     - **Address:** Address of the location.
+
+Ensure the recommendations are tailored to the provided location, interests, and budget.
+Generate at 3 recommendations based on the user preferences.
+Make sure to send the correct json without any errors in parsing.
