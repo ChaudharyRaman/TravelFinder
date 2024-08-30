@@ -5,8 +5,8 @@ import Header from "@/components/ui/Navbar";
 import { useRouter } from "next/navigation";
 import Image from "next/image";
 
-export default function dashboard() {
-  const router = useRouter();
+export default function Dashboard() {
+  const Router = useRouter();
   return (
     <div className="flex flex-col min-h-[100dvh]">
       <Header />
@@ -28,7 +28,7 @@ export default function dashboard() {
                   <Button
                     className="bg-[#8e2de2] text-white hover:bg-[#a24ef4] flex-1"
                     onClick={() => {
-                      router.push("/user-recommend");
+                      Router.push("/user-recommend");
                     }}
                   >
                     Get Personalized Recommendation
@@ -36,7 +36,7 @@ export default function dashboard() {
                   <Button
                     className="bg-[#4a00e0] text-white hover:bg-[#6b1fdd] flex-1"
                     onClick={() => {
-                      router.push("/ai-recommend");
+                      Router.push("/ai-recommend");
                     }}
                   >
                     Get AI Recommendation
@@ -131,7 +131,7 @@ export default function dashboard() {
                 <p className="max-w-[900px] text-[#666] md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed">
                   From tropical beaches to snow-capped mountains, our
                   recommendations cover a wide range of destinations to suit
-                  every traveler's taste.
+                  every traveler&apos;s taste.
                 </p>
               </div>
             </div>
@@ -149,7 +149,7 @@ export default function dashboard() {
                     Bali, Indonesia
                   </h3>
                   <p className="text-[#666]">
-                    Discover the beauty of Bali's beaches, temples, and vibrant
+                    Discover the beauty of Bali&apos;s beaches, temples, and vibrant
                     culture.
                   </p>
                 </div>

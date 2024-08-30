@@ -10,7 +10,7 @@ import axios from "axios";
 import { useRouter } from "next/navigation";
 import toast from "react-hot-toast";
 
-export default function signup() {
+export default function Signup() {
   const router = useRouter();
   const [step, setStep] = useState(1);
   const [input, setInput] = useState({

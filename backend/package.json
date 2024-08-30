@@ -7,7 +7,8 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "dev": "ts-node-dev --respawn --transpile-only src/index.ts",
     "start": "node dist/index.js",
-    "build": "tsc"
+    "build": "tsc && npm run copy-hbs",
+    "copy-hbs": "cpx \"src/utils/handlebars/*.hbs\" dist/utils/handlebars"
   },
   "keywords": [],
   "author": "",

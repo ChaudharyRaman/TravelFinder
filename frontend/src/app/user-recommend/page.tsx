@@ -10,7 +10,7 @@ import {
 } from "@/interface/recommendation.interface";
 import Navbar from "@/components/ui/Navbar";
 
-export default function userrecommend() {
+export default function Userrecommend() {
   const [formData, setFormData] = useState<InputRecommendation>({
     location: "",
     interests: [],
